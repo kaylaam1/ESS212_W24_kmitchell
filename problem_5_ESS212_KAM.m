@@ -11,16 +11,21 @@ S_1 = 1;
 %choose a N 
 N = 20;
 %define the first two sequence numbers as stated by initial conditions
+n = [0 1]
 S_n = [S_0, S_1];
 %for the loop, start at step 3 and go to any specified N
-n = [3:N];
-
-
 %fill in sequence starting at 3 using the formula provided
-for i = n
+for i = 3:N
+    n(i) = i-1;
     S_n(i) = 2*S_n(i-1) + 2*S_n(i-2);
 end
+% print out the sequence
+fprintf('%2s %8s \n','n','S[n]')
+for i = 1:N
+    fprintf('%2i %8i \n', n(i), S_n(i) );
+end
 
+    
 
 %find where fxn_b intersects 6 to compute b
 %the value 6 comes from solving the sequence in the written portion
