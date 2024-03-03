@@ -1,0 +1,6 @@
+function S2 = O1_iter(n)
+    S2 = 0;
+    for i = 1:n
+        S2 = S2 + (i^2);
+    end
+end
