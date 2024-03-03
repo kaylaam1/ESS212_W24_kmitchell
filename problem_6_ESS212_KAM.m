@@ -15,14 +15,6 @@ tol = 1e-5;
 sqrt_c = bab_sqrt(c,tol);
 
 check_bab_sqrt(tol)
-function x = bab_sqrt(c, tol)
-%start with initial guess of x0
-    x = c / 2;  
-    while abs(x^2 - c) > tol
-        %iterate using reccurence relation
-        x = 0.5* (x+c / x);
-    end
-end
 
 
 function check_bab_sqrt(tol)
