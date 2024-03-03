@@ -24,7 +24,7 @@ imagesc(x, y, mandelbrot);
 title('The Mandelbrot Set');
 xlabel('Real(c)');
 ylabel('Imag(c)');
-
+axis image
 %c vals. can specify the iteration_max parameter to set the # of iterations 
 %that you check each point is in the set
 
